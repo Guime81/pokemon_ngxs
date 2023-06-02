@@ -1,0 +1,14 @@
+h2 {
+    margin: 2rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+div {
+    margin: 0 auto;
+}

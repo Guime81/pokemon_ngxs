@@ -1,0 +1,10 @@
+<app-search-bar
+  [ready]="$ready | async"
+  [resetedSearchValue]="$searchValue | async"
+  (onNewValue)="searchPokemon($event)"
+  (onResetValue)="resetInputAndSearchValue()"
+></app-search-bar>
+<app-pokemon-list
+  [loading]="$loading | async"
+  [pokemonList]="$pokemonsFilteredList | async"
+></app-pokemon-list>

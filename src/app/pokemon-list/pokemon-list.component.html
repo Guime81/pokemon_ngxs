@@ -1,0 +1,17 @@
+<h2>Loading {{ loading }}</h2>
+
+<section class="grid">
+  <div *ngFor="let pokemon of pokemonList">
+    <h3>{{ pokemon.name }}</h3>
+    <img [src]="pokemon.image" [alt]="pokemon.name" width="100" />
+    <h4>Statistiques:</h4>
+    <ul>
+      <li>Hp: {{ pokemon.stats.HP }}</li>
+      <li>Attack: {{ pokemon.stats.attack }}</li>
+      <li>Defense: {{ pokemon.stats.defense }}</li>
+      <li>Special Attack: {{ pokemon.stats.special_attack }}</li>
+      <li>Special Defense: {{ pokemon.stats.special_defense }}</li>
+      <li>Speed: {{ pokemon.stats.speed }}</li>
+    </ul>
+  </div>
+</section>

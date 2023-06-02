@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input:first-of-type {
+    margin-right: 1rem;
+}
